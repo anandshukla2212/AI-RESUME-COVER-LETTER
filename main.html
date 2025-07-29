@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>🌟 Resume & Cover Letter Tool 🌟</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
   <style>
@@ -9,8 +10,8 @@
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(to right, #74ebd5, #9face6);
-      height: 100vh;
-      overflow: hidden;
+      min-height: 100vh;
+      overflow-x: hidden;
       position: relative;
     }
 
@@ -25,9 +26,6 @@
     }
 
     .headline-banner {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       background: #b83030;
       color: #fff;
@@ -36,8 +34,13 @@
       padding: 10px 0;
       text-align: center;
       z-index: 10;
-      overflow: hidden;
       white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .headline-banner span {
+      display: inline-block;
       animation: slide-left 15s linear infinite;
     }
 
@@ -81,10 +84,8 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       width: 90%;
       max-width: 500px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      margin: 120px auto;
+      position: relative;
       z-index: 5;
     }
 
@@ -140,7 +141,7 @@
 
     .flower-top-left, .flower-bottom-right {
       position: absolute;
-      width: 120px;
+      width: 100px;
       z-index: 1;
       opacity: 0.7;
     }
@@ -224,11 +225,48 @@
       cursor: pointer;
       color: #888;
     }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 25px;
+        width: 92%;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      .top-bar {
+        top: 80px;
+        right: 10px;
+      }
+
+      .top-bar button {
+        font-size: 12px;
+        padding: 8px 10px;
+      }
+
+      .headline-banner {
+        font-size: 14px;
+        padding: 8px 0;
+      }
+
+      .popup {
+        width: 90%;
+        padding: 20px;
+      }
+
+      .flower-top-left, .flower-bottom-right {
+        width: 70px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <div class="headline-banner">🌍 Welcome World! ✨ Create stunning resumes and cover letters easily! 📝 Made with ❤️ by Anand Shukla</div>
+  <div class="headline-banner">
+    <span>🌍 Welcome World! ✨ Create stunning resumes and cover letters easily! 📝 Made with ❤️ by Anand Shukla</span>
+  </div>
 
   <img src="rs.png" class="flower-top-left" alt="Flower Decoration">
   <img src="kug.png" class="flower-bottom-right" alt="Flower Decoration">
