@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>🌟 Resume & Cover Letter Tool 🌟</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -30,13 +31,13 @@
       background: #b83030;
       color: #fff;
       font-weight: 600;
-      font-size: 18px;
-      padding: 10px 0;
+      font-size: 16px;
+      padding: 8px 0;
       text-align: center;
-      z-index: 10;
       white-space: nowrap;
       overflow: hidden;
       position: relative;
+      z-index: 10;
     }
 
     .headline-banner span {
@@ -57,8 +58,8 @@
     }
 
     .top-bar button {
-      margin-left: 10px;
-      padding: 10px 18px;
+      margin-left: 8px;
+      padding: 8px 14px;
       font-size: 14px;
       background-color: white;
       color: #2d5e8f;
@@ -72,31 +73,30 @@
     .top-bar button:hover {
       background-color: #2d5e8f;
       color: white;
-      box-shadow: 0 0 12px #2d5e8f;
     }
 
     .card {
       background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(10px);
-      padding: 40px;
+      padding: 30px 20px;
       border-radius: 16px;
       text-align: center;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       width: 90%;
-      max-width: 500px;
-      margin: 120px auto;
+      max-width: 400px;
+      margin: 110px auto;
       position: relative;
       z-index: 5;
     }
 
     h1 {
       margin-bottom: 10px;
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: #2c3e50;
     }
 
     p {
-      font-size: 16px;
+      font-size: 15px;
       color: #555;
       margin-bottom: 25px;
     }
@@ -104,12 +104,12 @@
     .buttons {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 12px;
     }
 
     button.main {
-      padding: 14px;
-      font-size: 16px;
+      padding: 12px;
+      font-size: 15px;
       background-color: #2d5e8f;
       color: white;
       border: none;
@@ -120,16 +120,15 @@
 
     button.main:hover {
       background-color: #1e456a;
-      box-shadow: 0 0 10px #1e456a;
     }
 
     .img-box {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     .img-box img {
-      width: 100px;
+      width: 80px;
       height: auto;
       animation: float 2s infinite ease-in-out;
     }
@@ -139,11 +138,12 @@
       50% { transform: translateY(-10px); }
     }
 
-    .flower-top-left, .flower-bottom-right {
+    .flower-top-left,
+    .flower-bottom-right {
       position: absolute;
-      width: 100px;
+      width: 60px;
       z-index: 1;
-      opacity: 0.7;
+      opacity: 0.6;
     }
 
     .flower-top-left {
@@ -164,11 +164,12 @@
       left: 50%;
       transform: translate(-50%, -50%) scale(0);
       background: #fff;
-      padding: 30px;
+      padding: 25px;
       border-radius: 12px;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
       z-index: 999;
-      width: 300px;
+      width: 90%;
+      max-width: 320px;
       transition: 0.3s ease;
     }
 
@@ -179,6 +180,7 @@
     .popup h2 {
       margin-top: 0;
       color: #2c3e50;
+      font-size: 18px;
     }
 
     .popup input {
@@ -227,37 +229,36 @@
     }
 
     @media (max-width: 600px) {
+      .headline-banner {
+        font-size: 13px;
+      }
+
+      .top-bar {
+        top: 85px;
+        right: 10px;
+      }
+
+      .top-bar button {
+        font-size: 12px;
+        padding: 6px 10px;
+      }
+
       .card {
-        padding: 25px;
-        width: 92%;
+        padding: 20px 15px;
+        margin-top: 120px;
       }
 
       h1 {
         font-size: 1.4rem;
       }
 
-      .top-bar {
-        top: 80px;
-        right: 10px;
+      .img-box img {
+        width: 60px;
       }
 
-      .top-bar button {
-        font-size: 12px;
-        padding: 8px 10px;
-      }
-
-      .headline-banner {
-        font-size: 14px;
-        padding: 8px 0;
-      }
-
-      .popup {
-        width: 90%;
-        padding: 20px;
-      }
-
-      .flower-top-left, .flower-bottom-right {
-        width: 70px;
+      .flower-top-left,
+      .flower-bottom-right {
+        width: 50px;
       }
     }
   </style>
@@ -268,8 +269,7 @@
     <span>🌍 Welcome World! ✨ Create stunning resumes and cover letters easily! 📝 Made with ❤️ by Anand Shukla</span>
   </div>
 
- 
-  <img src="kug.png" class="flower-bottom-right" alt="Flower Decoration">
+  
 
   <div class="top-bar">
     <button onclick="openPopup('login')">🔐 Login</button>
