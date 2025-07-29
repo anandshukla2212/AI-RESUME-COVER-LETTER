@@ -268,7 +268,7 @@
     <span>🌍 Welcome World! ✨ Create stunning resumes and cover letters easily! 📝 Made with ❤️ by Anand Shukla</span>
   </div>
 
-  <img src="rs.png" class="flower-top-left" alt="Flower Decoration">
+ 
   <img src="kug.png" class="flower-bottom-right" alt="Flower Decoration">
 
   <div class="top-bar">
